@@ -49,6 +49,21 @@ class MyButton_2 extends StatelessWidget {
                 elevation: 15,
               ),
             ),
+            //Inkwell không phải là một button
+            //nhưng nó cho phép tạo hiệu ứng gợn sóng (ripple effect) khi người dùng chạm vào
+            SizedBox(height: 20),
+            InkWell(
+              onTap: () {
+                print("InkWell");
+              },
+              child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.blue),
+                ),
+                child: Text("Button tuy chinh voi inkwell"),
+              ),
+            ),
           ],
         ),
       ),
