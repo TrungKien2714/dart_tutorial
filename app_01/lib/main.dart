@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'MyAppBar.dart';
-import 'MyText.dart';
-import 'MyContainer.dart';
-import 'MyColumnAndRow.dart';
-import 'MyButton.dart';
-import 'MyButton_2.dart';
-import 'MyButton_3.dart';
-import 'MyGestures.dart';
-import 'MyTextField.dart';
-import 'MyTextField2.dart';
+import 'my_widget/MyAppBar.dart';
+import 'my_widget/MyText.dart';
+import 'my_widget/MyContainer.dart';
+import 'my_widget/MyColumnAndRow.dart';
+import 'my_widget/MyButton.dart';
+import 'my_widget/MyButton_2.dart';
+import 'my_widget/MyButton_3.dart';
+import 'my_widget/MyGestures.dart';
+import 'my_widget/MyTextField.dart';
+import 'my_widget/MyTextField2.dart';
+import 'form/form_basic.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -40,7 +42,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: Mytextfield2(),
+      home: FormBasic(),
     );
   }
 }
